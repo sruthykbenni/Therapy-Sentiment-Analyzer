@@ -1,0 +1,172 @@
+/* Custom CSS for MindScribe */
+
+/* Main theme colors */
+:root {
+    --primary-color: #4B8BF5;
+    --primary-light: #82b4ff;
+    --primary-dark: #0062cc;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --background-color: #f7f9fc;
+    --card-color: #ffffff;
+    --text-color: #212529;
+    --border-color: #e9ecef;
+}
+
+/* Page background */
+.stApp {
+    background-color: var(--background-color);
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background-color: var(--card-color);
+    border-right: 1px solid var(--border-color);
+}
+
+/* Header styling */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Card styling */
+div.stBlock, div.element-container {
+    border-radius: 8px;
+}
+
+/* Form containers */
+div.stForm > div:first-child {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--card-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Button styling */
+.stButton > button {
+    border-radius: 4px;
+    font-weight: 500;
+    padding: 0.25rem 1rem;
+    transition: all 0.2s;
+}
+
+.stButton > button:first-child {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.stButton > button:first-child:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.stButton > button:not(:first-child) {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.stButton > button:not(:first-child):hover {
+    opacity: 0.9;
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    font-weight: 500;
+    color: var(--dark-color);
+    background-color: #f1f3f9;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+.streamlit-expanderContent {
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    padding: 1rem;
+    background-color: var(--card-color);
+}
+
+/* Tabs styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 2px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 45px;
+    white-space: pre-wrap;
+    background-color: var(--light-color);
+    border-radius: 4px 4px 0px 0px;
+    gap: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: var(--primary-light);
+    color: white;
+}
+
+/* Table styling */
+div.stDataFrame {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Input fields */
+div.stTextInput > div > div > input,
+div.stTextArea > div > div > textarea,
+div.stNumberInput > div > div > input {
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+div.stTextInput > div > div > input:focus,
+div.stTextArea > div > div > textarea:focus,
+div.stNumberInput > div > div > input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(75, 139, 245, 0.25);
+}
+
+/* Emotional analysis charts */
+div.stPlotlyChart, div.stPyplot {
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Login/Signup containers */
+div.stBlock[data-testid="block-container"] > div:first-child {
+    max-width: 600px;
+    margin: 0 auto;
+}
