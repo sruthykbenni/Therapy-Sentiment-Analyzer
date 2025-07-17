@@ -1,6 +1,6 @@
 # 🧠 Therapy Sentiment Analyzer – MindScribe
 
-Welcome to **MindScribe**, an intelligent NLP-powered platform designed to support therapists in understanding and tracking patient emotions. This application performs sentiment and emotion analysis on therapy session text inputs, helping therapists visualize emotional trends and generate meaningful insights.
+**MindScribe**, an intelligent NLP-powered platform designed to support therapists in understanding and tracking patient emotions. This application performs sentiment and emotion analysis on therapy session text inputs, helping therapists visualize emotional trends and generate meaningful insights.
 
 ## 🔗 Live App
 
